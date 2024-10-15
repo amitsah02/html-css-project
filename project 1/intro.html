@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <title>Expense Tracker App</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile">
+            <img src="data:image/png;base64,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" alt="Profile Icon">
+            <div class="profile-info">
+                <p class="name">Amit kumar Sah</p>
+                <span class="arrow"></span>
+            </div>
+        </div>
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a href="#dashboardDropdown" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Dashboard</a>
+                <ul class="collapse list-unstyled" id="dashboardDropdown">
+                    <li>
+                        <a href="#">Overview</a>
+                    </li>
+                    <li>
+                        <a href="#">Expenses</a>
+                    </li>
+                    <li>
+                        <a href="#">Income</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <div class="sidebar-footer">
+            <p>Name: John Doe</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <h1>Expense Tracker App</h1>
+        <div class="input-section">
+            <label for="category-select">Category:</label>
+            <select id="category-select">
+                <option value="Food & Beverage">Food & Beverage</option>
+                <option value="Rent">Rent</option>
+                <option value="Transport">Transport</option>
+                <option value="Relaxing">Relaxing</option>
+                <option value="other">Other</option>
+            </select>
+            <input type="text" placeholder="enter your category">
+            <label for="amount-input">Amount:</label>
+            <input type="number" id="amount-input">
+            <label for="date-input">Date:</label>
+            <input type="date" id="date-input">
+            <button id="add-btn">Add</button>
+        </div>
+        <div class="expenses-list">
+            <h2>Expenses List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Amount</th>
+                        <th>Date</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="expense-table-body"></tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="text-right">Total:</td>
+                        <td id="total-amount"></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <img src="https://st.depositphotos.com/1875497/3781/i/450/depositphotos_37810929-stock-photo-books-on-white.jpg">
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script1.js"></script>
+</body>
+</html>
